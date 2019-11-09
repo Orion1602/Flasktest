@@ -1,11 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <title>About me</title>
-    </head>
+{% extends "base.html" %}
+{% block title %}About me{% endblock title%}
+{% block content%}
 
-    <body>
         <p>
             <a href="/">Home</a>
             <a href="/about-me">About me</a>
@@ -13,5 +9,5 @@
         </p>
 
         <h1>Something about me</h1>
-    </body>
-</html>
+
+{% endblock content %}
