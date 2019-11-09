@@ -9,6 +9,9 @@
         </p>
 
         <h1>Something about me</h1>
+        {% if name %}
+                <p>Hello {{name}}</p>
+        {% endif %}
 
 <h2>Testformular:</h2>
 <form method="post" action="/about-me">
