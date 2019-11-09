@@ -7,7 +7,8 @@ app = Flask(__name__)
 def index():
     some_text = "Hello Message!"
     current_year = datetime.datetime.now()
-    return render_template("index.html", some_text=some_text, current_year=current_year)
+    cities = ["Wien", "Salzburg", "Linz", "Graz"]
+    return render_template("index.html", some_text=some_text, current_year=current_year, cities=cities)
 
 
 @app.route("/about-me")

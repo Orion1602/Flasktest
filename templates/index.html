@@ -10,6 +10,16 @@
         <h1>Welcome back to HTML ;)</h1>
         <p>{{some_text}}</p>
         <p>Aktuelles Datum: {{current_year}}</p>
+        {% for city in cities %}
+                    <p>{{city}}</p>
+        {% endfor %}
+    {% if cities %}
+             <p>Das Array cities existiert</p>
+
+{% else %}
+         <p>Kein Array vorhanden.</p>
+
+{% endif %}
 
         <img src="/static/img/smartninjalogo.png">
 {% endblock content %}
